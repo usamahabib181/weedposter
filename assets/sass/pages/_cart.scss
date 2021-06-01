@@ -1,0 +1,111 @@
+.cart {
+	h1 {
+		font-size: 3rem;
+	}
+	.container-fluid {
+		margin: 0px;
+		padding: 0px;
+	}
+	&-main {
+		height: 90vh;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		margin-left: 5rem;
+		padding: 3rem 5rem;
+	}
+	&-sidebar {
+		background-color: $color-gray;
+		height: 100vh;
+		margin-left: 3rem;
+		padding: 3rem 4rem;
+		hr {
+			border-bottom: 1px solid $color-gray-1;
+		}
+		@include respond(sm) {
+			margin-left: 0;
+		}
+	}
+	&-item {
+		display: flex;
+		position: relative;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 1rem 0;
+		&:not(:last-child) {
+			border-bottom: 1px solid $color-gray-1;
+		}
+		&-product {
+		}
+		&-description {
+		}
+		&-quantity {
+			padding: 0.8rem;
+			border: 1.5px solid $color-black;
+			text-align: center;
+			border-radius: 1rem;
+			font-weight: 600;
+			position: relative;
+			width: 65px;
+			display: inline-block;
+			input {
+				padding: 0;
+				margin-top: 2px !important;
+				text-align: center;
+				background-color: transparent;
+				min-width: 20px;
+			}
+			.quantityPlus {
+				position: absolute;
+				top: 1rem;
+				right: 1rem;
+			}
+			.quantityMinus {
+				position: absolute;
+				margin-top: 1.2rem;
+				right: 1rem;
+			}
+		}
+		&-cross {
+			height: 1.5rem;
+			width: 5rem;
+		}
+		@include respond(sm) {
+			text-align: center;
+			[class*="col-"] {
+				margin-bottom: 1rem;
+			}
+			&-product {
+				height: 30rem;
+			}
+			&-quantity {
+				padding: 1rem;
+				border: 1.5px solid $color-black;
+				text-align: center;
+				border-radius: 1rem;
+				font-weight: 600;
+			}
+			&-cross {
+				position: absolute;
+				height: 5rem;
+				width: 5rem;
+				background: $color-gray;
+				border-radius: 10rem;
+				overflow: hidden;
+				top: 2rem;
+				right: 2rem;
+			}
+		}
+	}
+	&-link {
+		margin-left: 5rem;
+		height: 10vh;
+		a {
+			display: inherit;
+			img {
+				transform: rotate(-90deg) scale(0.8);
+				margin: 1.5rem;
+				margin-top: 0.5rem;
+			}
+		}
+	}
+}

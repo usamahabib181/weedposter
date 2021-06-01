@@ -1,0 +1,122 @@
+.text-center-md {
+  @include respond(md) {
+    text-align: center;
+  }
+}
+.background-gray {
+  background-color: $color-gray !important;
+}
+.background-white {
+  background-color: $color-white !important;
+}
+.background-primary {
+  background-color: $color-primary-light !important;
+}
+.background-primary-solid {
+  background-color: $color-primary !important;
+}
+.background-primary-light {
+  background-color: $color-primary-light-1 !important;
+}
+.background-secondary {
+  background-color: $color-secondary-light !important;
+}
+.background-secondary-solid {
+  background-color: $color-secondary !important;
+}
+.background-tertiary {
+  background-color: $color-tertiary-light !important;
+}
+.background-skyblue {
+  background-color: $color-skyblue-light !important;
+}
+.txt-skyblue {
+  color: $color-skyblue !important;
+}
+.background-gold {
+  background-color: $color-gold-light !important;
+}
+.txt-gold {
+  color: $color-gold !important;
+}
+.background-blue {
+  background-color: $color-blue-light !important;
+}
+.txt-blue {
+  color: $color-blue !important;
+}
+.txt-primary-light {
+  color: $color-primary-light-2 !important;
+}
+.txt-primary {
+  color: $color-primary-light !important;
+}
+.txt-primary-solid {
+  color: $color-primary !important;
+}
+.txt-secondary-solid {
+  color: $color-secondary !important;
+}
+.txt-secondary {
+  color: $color-secondary-light !important;
+}
+.txt-tertiary {
+  color: $color-tertiary-light !important;
+}
+.txt-primary-dark {
+  color: $color-primary-dark !important;
+}
+.txt-secondary-dark {
+  color: $color-secondary-dark !important;
+}
+.txt-tertiary-dark {
+  color: $color-tertiary-dark !important;
+}
+.txt-muted {
+  color: $color-gray-2 !important;
+}
+.mt-6 {
+  margin-top: 4rem !important;
+}
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+.ptb-100 {
+  padding: 10rem 0 !important;
+}
+.ptb-50 {
+  padding: 5rem 0 !important;
+}
+.pt-50 {
+  padding-top: 5rem !important;
+}
+.pb-100 {
+  padding-bottom: 10rem !important;
+}
+.br-1 {
+  border-radius: 0.8rem !important;
+}
+.txt-sm {
+  font-size: 75%;
+}
+.thumbnail {
+  width: 110px;
+  @include respond(md) {
+    width: 140px;
+    display: block;
+    margin: auto;
+  }
+}
+.h-100vh {
+  min-height: 100vh !important;
+}
+.h-80vh {
+  min-height: 80vh !important;
+}
+.h-60vh {
+  min-height: 60vh !important;
+}
+.thumbnail-sm {
+  width: 70px;
+}

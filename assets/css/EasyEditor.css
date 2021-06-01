@@ -1,0 +1,128 @@
+/**
+ *EasyEditor v2.0.0
+ *
+ *@author Mohamed Yousef <engineer.mohamed.yossef@gmail.com>
+ *@license MIT
+ *@copyright 2020 AGASHE
+ */
+
+.ee-frame {
+  height: 70px;
+  border: none;
+  margin: 0;
+  padding: inherit;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  background: #000;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+.ee-frame ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.ee-frame ul li {
+  padding: 1rem;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 11pt;
+  cursor: pointer;
+  display: none;
+  border-radius: 0;
+}
+.ee-frame ul li:not(:last-child) {
+  border-right: 1px solid #000;
+}
+.ee-frame ul li:nth-child(1),
+.ee-frame ul li:nth-child(2),
+.ee-frame ul li:nth-child(3) {
+  display: flex;
+  padding: 1rem;
+  background: #fff;
+  min-width: 40px;
+  justify-content: center;
+}
+
+.ee-frame ul li:nth-child(1) {
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+.ee-frame ul li:nth-child(3) {
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.ee-frame .right-space {
+  margin-right: 15px;
+}
+.ee-frame .small-right-space {
+  margin-right: 6px;
+}
+.ee-frame .adjust-button {
+  margin-top: 10px;
+  padding-bottom: 0;
+}
+.ee-frame .adjust-font-button {
+  margin-top: 5px;
+  padding-bottom: 0;
+}
+.ee-frame .top-space {
+  padding-top: 3px;
+}
+.ee-frame .no-top-space {
+  padding-top: 2px;
+}
+.ee-frame .no-right-padding {
+  padding-right: 0;
+}
+.ee-frame .about-button {
+  float: right;
+}
+
+.ee-fpanel {
+  height: 130px;
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #000;
+  background-color: #ffffff;
+  position: absolute;
+  top: 42px;
+  left: 185px;
+}
+.ee-fpanel select {
+  height: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.ee-fpanel button {
+  height: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ee-textbox {
+  border: none;
+  border-top: none;
+  margin: 0;
+  padding: 5px;
+  resize: none;
+  width: 100% !important;
+  min-height: 250px;
+}
+
+.ee-preview {
+  display: none;
+  background-color: #f8f5f5;
+  font-family: Tahoma;
+  font-size: 10pt;
+  border: 1px solid #000;
+  border-top: none;
+  margin: 0;
+  padding: 5px;
+  overflow: auto;
+  cursor: pointer;
+  white-space: pre;
+}

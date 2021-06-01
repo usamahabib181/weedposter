@@ -1,0 +1,48 @@
+.admin {
+  &-overview {
+    &-card {
+      display: flex;
+      flex-direction: inherit;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 1rem;
+      height: 100%;
+      @include respond(md) {
+        height: auto;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      span {
+        font-size: 1.6rem;
+      }
+      .icon {
+        padding: 2rem;
+        border-radius: 50% !important;
+      }
+    }
+  }
+}
+#adminPendingUser {
+  .modal-dialog {
+    .modal-content {
+      padding: 1rem;
+      min-width: 40rem;
+    }
+  }
+}
+.datepicker {
+  position: relative;
+  + img {
+    position: absolute;
+    top: 30%;
+    right: 30px;
+    transform: rotateX(0deg);
+  }
+  &:active,
+  &:focus-within {
+    + img {
+      transform: rotateX(180deg);
+    }
+  }
+}

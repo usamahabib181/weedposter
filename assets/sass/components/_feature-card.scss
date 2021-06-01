@@ -1,0 +1,31 @@
+.feature-card {
+  position: relative;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  padding-right: 3rem;
+  min-width: 29rem;
+  h2 {
+    font-size: 2.8rem;
+  }
+  .txt {
+    font-size: 1.3rem;
+    display: block;
+  }
+  .price {
+    color: $color-primary-dark;
+  }
+  .pic {
+    position: absolute;
+    top: -2rem;
+    transform: scale(1.4);
+    right: -8rem;
+  }
+  @include respond(sm) {
+    .pic {
+      transform: scale(1);
+      right: -9rem;
+      top: -5rem;
+    }
+    margin-left: 1rem;
+  }
+}

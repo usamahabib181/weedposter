@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.css" />
+  <link rel="stylesheet" href="../assets/css/EasyEditor.css" />
+  <link rel="stylesheet" href="../assets/css/jquery-ui.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <script src="https://kit.fontawesome.com/31eba78f92.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="../assets/img/logo.svg" type="image/x-icon">
+  <title>Weed Poster</title>
+</head>
+
+<body>
+  <main class="account">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <label class="toggle-botton mt-3" for="toggler">
+          <img src="../assets/img/menu-toggle.svg" alt="" class="img-fluid" />
+        </label>
+        <div class="col-md-2 account-sidebar">
+          <label class="cross-botton" for="toggler">
+            <img src="../assets/img/cancel.svg" alt="" class="img-fluid" />
+          </label>
+          <div class="text-center mt-4 mb-5">
+            <img src="../assets/img/logo.svg" alt="">
+          </div>
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="" id="acc-overview-tab" data-toggle="pill" href="#acc-overview" role="tab"
+              aria-controls="acc-overview" aria-selected="false">
+              <span></span> Overview
+            </a>
+            <a class="" id="acc-refHistory-tab" data-toggle="pill" href="#acc-refHistory" role="tab"
+              aria-controls="acc-refHistory" aria-selected="false">
+              <span></span> Referrals
+            </a>
+            <a class="" id="acc-orderHistory-tab" data-toggle="pill" href="#acc-orderHistory" role="tab"
+              aria-controls="acc-orderHistory" aria-selected="false">
+              <span></span> Orders
+            </a>
+            <a class="" id="acc-users-tab" data-toggle="pill" href="#acc-users" role="tab" aria-controls="acc-users"
+              aria-selected="false">
+              <span></span> Users
+            </a>
+            <a class="active" id="acc-products-tab" data-toggle="pill" href="#acc-products" role="tab"
+              aria-controls="acc-products" aria-selected="true">
+              <span></span> Products
+            </a>
+            <a class="" id="acc-collections-tab" data-toggle="pill" href="#acc-collections" role="tab"
+              aria-controls="acc-collections" aria-selected="false">
+              <span></span> Collections
+            </a>
+            <a class="" id="acc-discount-tab" data-toggle="pill" href="#acc-discount" role="tab"
+              aria-controls="acc-discount" aria-selected="false">
+              <span></span> Discount
+            </a>
+            <a class="" id="acc-strains-tab" data-toggle="pill" href="#acc-strains" role="tab"
+              aria-controls="acc-strains" aria-selected="false">
+              <span></span> Strains
+            </a>
+          </div>
+        </div>
+        <div class="col-md-10 user-main">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade" id="acc-overview" role="tabpanel" aria-labelledby="acc-overview-tab">
+              <div class="container">
+                <div class="user-popup-card">
+                  <img src="../assets/img/user-img.png" alt="">
+                  <div class="">
+                    <p>Welcome, user@gmail.com</p>
+                    <span class="txt-primary-solid">logout</span>
+                  </div>
+                </div>
+                <div class="row align-items-start justify-content-center">
+                  <div class="row col-12">
+                    <div class="col-md-3 mb-5">
+                      <h1>Overview</h1>
+                    </div>
+                    <div class="col-md-3">
+                      <div
+                        class=" background-white  d-flex justify-content-between align-items-center no-gutters px-3 ">
+                        <select name="admindrop-1" id="admindrop-1" style="-webkit-appearance: none;">
+                          <option value="">last 30 days </option>
+                          <option value="">last 60 days </option>
+                          <option value="">last 90 days </option>
+                        </select>
+                        <label class="col-1 br-1 background-primary-light d-table" for="admindrop-1"
+                          onclick="$('#admindrop-1').click()">
+                          <img src="../assets/img/arrow-down-solid-primary.svg" alt="" class="p-3">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 row mb-5">
+                    <div class="col-md-4">
+                      <div class="admin-overview-card background-gray">
+                        <div class="">
+                          <h1 class="mr-3">34k</h1>
+                          <span>Product Views</span>
+                        </div>
+                        <div class="icon background-blue">
+                          <img class="img-fluid" src="../assets/img/multi-user.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="admin-overview-card background-gray">
+                        <div class="">
+                          <h1 class="mr-3">240</h1>
+                          <span>Completed Orders</span>
+                        </div>
+                        <div class="icon background-skyblue">
+                          <img class="img-fluid" src="../assets/img/trolley.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="admin-overview-card background-gray">
+                        <div class="">
+                          <h1 class="mr-3">453</h1>
+                          <span>New Customers</span>
+                        </div>
+                        <div class="icon background-gold">
+                          <img class="img-fluid" src="../assets/img/Add User.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 row no-gutters">
+                    <div class="col-12">
+                      <h1>Earnings Summary</h1>
+                    </div>
+                    <div class="wrapper col-12 p-5 br-1 background-gray justify-content-center"><canvas
+                        id="adminChart-2" width="800px" height="400px" style="width: 800px !important;"></canvas>
+                      <div
+                        class="col-md-9 background-primary-light px-3 py-2 br-1  m-auto d-flex justify-content-center flex-wrap">
+                        <button class="button button-lg button__outline-reversed mx-3">One Week</button>
+                        <button class="button button-lg  button__outline-reversed mx-3">One Month</button>
+                        <button class="button button-lg  button__outline-reversed mx-3">Three Month</button>
+                        <button class="button button-lg  button__outline-reversed mx-3">One Year</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade " id="acc-refHistory" role="tabpanel" aria-labelledby="acc-refHistory-tab">
+              <div class="container">
+                <div class="user-popup-card">
+                  <img src="../assets/img/user-img.png" alt="">
+                  <div class="">
+                    <p>Welcome, user@gmail.com</p>
+                    <span class="txt-primary-solid">logout</span>
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-3 mb-5">
+                    <h1>Referrals</h1>
+                  </div>
+                  <div class="col-md-4">
+                    <form action=""
+                      class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
+                      <label class="col-1"><img src="../assets/img/search.svg" alt=""></label>
+                      <input class="col-10" type="text" placeholder="Search">
+                    </form>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mt-5 background-gray p-5 table-responsive">
+                      <table class=" table table-reversed">
+                        <thead>
+                          <tr>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Referral User
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Referred User
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Cashback
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Date
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>
+                              example@gmail.com
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="acc-orderHistory" role="tabpanel" aria-labelledby="acc-orderHistory-tab">
+              <div class="container">
+                <div class="user-popup-card">
+                  <img src="../assets/img/user-img.png" alt="">
+                  <div class="">
+                    <p>Welcome, user@gmail.com</p>
+                    <span class="txt-primary-solid">logout</span>
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-3 mb-5">
+                    <h1>Orders</h1>
+                  </div>
+                  <div class="col-md-4">
+                    <form action=""
+                      class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
+                      <label class="col-1"><img src="../assets/img/search.svg" alt=""></label>
+                      <input class="col-10" type="text" placeholder="Search">
+                    </form>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="br-1 mt-5 background-gray p-5 table-responsive">
+                      <table class=" table table-reversed">
+                        <thead>
+                          <tr>
+                            <th class="">
+                              <div class="multiselect">
+                                <div class="selectBox" onclick="showCheckboxes(0)">
+                                  <select>
+                                    <label class="checkbox-container" id="selectAll">
+                                      <input type="checkbox" style="display: none;">
+                                      <span class="checkmark" style="top: 8px"></span>
+                                    </label>
+                                  </select>
+                                  <div class="overSelect"></div>
+                                </div>
+                                <div class="checkboxes">
+                                  <label class="checkbox-container" id="selectAll">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="checkbox-container" id="deSelectAll">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Order
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                User
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Status
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Total
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Date
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-blue txt-blue">Order Pending</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">Order Completed</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-skyblue txt-skyblue">Order Fullfilled</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-gold txt-gold">Awaiting Fullfillment</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-blue txt-blue">Order Pending</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">Order Completed</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-skyblue txt-skyblue">Order Fullfilled</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-gold txt-gold">Awaiting Fullfillment</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">Order Completed</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-skyblue txt-skyblue">Order Fullfilled</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-gold txt-gold">Awaiting Fullfillment</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-blue txt-blue">Order Pending</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">Order Completed</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-skyblue txt-skyblue">Order Fullfilled</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>#0001</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-gold txt-gold">Awaiting Fullfillment</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade " id="acc-users" role="tabpanel" aria-labelledby="acc-users-tab">
+              <div class="container">
+                <div class="user-popup-card">
+                  <img src="../assets/img/user-img.png" alt="">
+                  <div class="">
+                    <p>Welcome, user@gmail.com</p>
+                    <span class="txt-primary-solid">logout</span>
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-3 mb-5">
+                    <h1>Users</h1>
+                  </div>
+                  <div class="col-md-4">
+                    <form action=""
+                      class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
+                      <label class="col-1"><img src="../assets/img/search.svg" alt=""></label>
+                      <input class="col-10" type="text" placeholder="Search">
+                    </form>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="br-1 mt-5 background-gray p-5 table-responsive">
+                      <table class=" table table-reversed">
+                        <thead>
+                          <tr>
+                            <th class="">
+                              <div class="multiselect">
+                                <div class="selectBox" onclick="showCheckboxes(1)">
+                                  <select>
+                                    <label class="checkbox-container" id="selectAll">
+                                      <input type="checkbox" style="display: none;">
+                                      <span class="checkmark" style="top: 8px"></span>
+                                    </label>
+                                  </select>
+                                  <div class="overSelect"></div>
+                                </div>
+                                <div class="checkboxes">
+                                  <label class="checkbox-container" id="selectAll">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="checkbox-container" id="deSelectAll">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                User
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Status
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Total Spent
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Date Joined
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-gold txt-gold">Awaiting Verification</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-gold txt-gold">Awaiting Verification</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-gold txt-gold">Awaiting Verification</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-gold txt-gold">Awaiting Verification</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-gold txt-gold">Awaiting Verification</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>example@gmail.com</td>
+                            <td>
+                              <div class="badge badge-pill background-primary txt-primary-solid">User Verified</div>
+                            </td>
+                            <td>$10.00</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show active" id="acc-products" role="tabpanel" aria-labelledby="acc-products-tab">
+              <div class="container">
+                <div class="user-popup-card">
+                  <img src="../assets/img/user-img.png" alt="">
+                  <div class="">
+                    <p>Welcome, user@gmail.com</p>
+                    <span class="txt-primary-solid">logout</span>
+                  </div>
+                </div>
+                <div class="row align-items-start no-gutters">
+                  <div class="col-md-3 mb-5">
+                    <h1>Products</h1>
+                  </div>
+                  <div class="col-md-5">
+                    <form action=""
+                      class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
+                      <label class="col-1"><img src="../assets/img/search.svg" alt=""></label>
+                      <input class="col-10" type="text" placeholder="Search Product">
+                    </form>
+                  </div>
+                  <div class="col-md-12 mt-5 row justify-content-between align-items-center px-5">
+                    <div class="text-right txt-primary-solid">
+                      <h2><img src="../assets/img/arrow-left-primary.svg" alt="">
+                        <span class="ml-3">
+                          Return to All Products</span></h2>
+                    </div>
+                    <button class="button button__primary button-lg">Delete Product</button>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="br-1 mt-5 background-gray p-5">
+                      <h1>Product Details</h1>
+                      <div class="row mt-5">
+                        <div class="col-md-4">
+                          <p class="mb-5"><strong>Upload one or multiple PNGs of product</strong></p>
+                          <div class="card p-5">
+                            <!-- <label for="admin-img-upload" class="m-auto">
+                              <img src="../assets/img/math-plus.svg" alt="" class="py-6"></label>
+                            <input type="file" name="" id="admin-img-upload" class="d-none"> -->
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="../assets/img/nug 1.svg" class="d-block m-auto" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../assets/img/nug 1.svg" class="d-block m-auto" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../assets/img/nug 1.svg" class="d-block m-auto" alt="...">
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                data-slide="prev">
+                                <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                data-slide="next">
+                                <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="card mt-5 d-flex justify-content-center">
+                            <label for="colorPicker" class="p-3 d-flex justify-content-between">
+                              <strong> Background Color</strong>
+                              <input type="color" name="colorPicker" id="colorPicker" value="#dc5ed7"
+                                class="p-0 bg-transparent" style="width: 100px;">
+                              <img src="../assets/img/dropper.svg" alt="">
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="col-md-12">
+                            <input type="text" name="" id="" placeholder="Product Name" class="mb-5">
+                            <textarea id="textEditor" class="" placeholder="Product Description"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mt-5 br-1 background-gray p-5 h-60vh ">
+                      <h1>Strain Settings</h1>
+                      <div class="col-md-12 p-0">
+                        <div class="col-md-4 p-0 mt-5 mb-5">
+                          <select name="" id="">
+                            <option value="-1" class="text-muted">Add Strains</option>
+                            <option value="1" selected>Strain 1</option>
+                            <option value="2">Strain 2 </option>
+                            <option value="3">Strain 2</option>
+                          </select>
+                        </div>
+                        <hr>
+                      </div>
+                      <div class="col-md-12 row justify-content-start align-items-center px-4 mb-5 mt-5">
+                        <h2 class="mr-5">Strain 1</h2>
+                        <button class="button button-lg button__primary">Add Amount</button>
+                      </div>
+                      <div class="row mt-4">
+                        <div class="col-md-4">
+                          <input type="number" class="" placeholder="Variant Number">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="number" class="" id="" placeholder="Amount">
+                        </div>
+                      </div>
+                      <div class="row mt-4">
+                        <div class="col-md-4">
+                          <input type="number" class="" value="123456789">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="text" class="" id="" value="4 Gram">
+                        </div>
+                      </div>
+                      <hr class="mt-5 mb-5">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mt-5 br-1 background-gray p-5 h-60vh ">
+                      <h1>Raffle and Timer Settings</h1>
+                      <div class="col-md-12 row align-items-center mt-5 mb-5">
+                        <div class="col-md-4 p-0 mt-4">
+                          <span>Is this product a raffle? (select checkbox)</span>
+                        </div>
+                        <label class="col-1 checkbox-container checkbox-container-reverted " id="">
+                          <input type="checkbox" style="display: none;">
+                          <span class="checkmark" style="top: 8px"></span>
+                        </label>
+                        <div class="col-12 p-0 mt-5">
+                          <hr>
+                        </div>
+                      </div>
+                      <div class="row mt-4">
+                        <div class="col-md-4">
+                          <input type="text" class="datepicker" placeholder="Raffle Start Date" value="09/21/2020">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="text" class="datepicker" id="" placeholder="Raffle End Date" value="09/25/2020">
+                        </div>
+                      </div>
+                      <div class="row mt-4">
+                        <div class="col-md-4">
+                          <input type="text" class="" placeholder="00:00:00 - Start Time" value="11:00:00 - Start Time">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="text" class="" id="" placeholder="00:00:00 - End Time"
+                            value="11:59:00 - End Time">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mt-5 br-1 background-gray p-5 h-60vh ">
+                      <h1>Add-On Posters</h1>
+                      <div class="col-md-12 row align-items-center mt-5 mb-5">
+                        <div class="col-md-4 p-0 mt-4">
+                          <span>Is this product a poster? (select checkbox)</span>
+                        </div>
+                        <label class="col-1 checkbox-container checkbox-container-reverted " id="">
+                          <input type="checkbox" style="display: none;">
+                          <span class="checkmark" style="top: 8px"></span>
+                        </label>
+                        <div class="col-12 p-0 mt-5">
+                          <hr>
+                        </div>
+                      </div>
+                      <div class="col-md-12 p-0">
+                        <div class="col-md-4 p-0 mt-5 mb-5">
+                          <select name="" id="">
+                            <option value="-1" class="text-muted">Select Collection</option>
+                            <option value="1" selected>Poster Collection 1</option>
+                            <option value="2">Poster Collection 2 </option>
+                            <option value="3">Poster Collection 3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mt-5">
+                    <button class="button button-lg button__primary">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="acc-collections" role="tabpanel" aria-labelledby="acc-collections-tab">
+              <div class="container">
+                <div class="user-popup-card">
+                  <img src="../assets/img/user-img.png" alt="">
+                  <div class="">
+                    <p>Welcome, user@gmail.com</p>
+                    <span class="txt-primary-solid">logout</span>
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-3 mb-5">
+                    <h1>Collections</h1>
+                  </div>
+                  <div class="col-md-4">
+                    <form action=""
+                      class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
+                      <label class="col-1"><img src="../assets/img/search.svg" alt=""></label>
+                      <input class="col-10" type="text" placeholder="Search">
+                    </form>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="button button__primary button-lg">Create Collection</button>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="br-1 mt-5 background-gray p-5 table-responsive">
+                      <div class="row">
+                        <table class="col-md-8 table table-reversed" id='collections'>
+                          <thead>
+                            <tr>
+                              <th class="">
+                                <div class="multiselect">
+                                  <div class="selectBox" onclick="showCheckboxes(3)">
+                                    <select>
+                                      <label class="checkbox-container" id="selectAll">
+                                        <input type="checkbox" style="display: none;">
+                                        <span class="checkmark" style="top: 8px"></span>
+                                      </label>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                  </div>
+                                  <div class="checkboxes">
+                                    <label class="checkbox-container" id="selectAll">
+                                      <input type="checkbox">
+                                      <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-container" id="deSelectAll">
+                                      <input type="checkbox">
+                                      <span class="checkmark"></span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="sp-head">
+                                  Collections
+                                  <div class="sp-head-arrows">
+                                    <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                    <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                  </div>
+                                </div>
+                              </th>
+                              <th scope="col">
+                                <div class="sp-head">
+                                  Inventory
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="py-5">
+                              <td>
+                                <label class="checkbox-container">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </td>
+                              <td>Free Posters</td>
+                              <td>10 products</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label class="checkbox-container">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </td>
+                              <td>Free Posters</td>
+                              <td>10 products</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label class="checkbox-container">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </td>
+                              <td>Free Posters</td>
+                              <td>10 products</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label class="checkbox-container">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </td>
+                              <td>Free Posters</td>
+                              <td>10 products</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label class="checkbox-container">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </td>
+                              <td>Free Posters</td>
+                              <td>10 products</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label class="checkbox-container">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </td>
+                              <td>Free Posters</td>
+                              <td>10 products</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label class="checkbox-container">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </td>
+                              <td>Free Posters</td>
+                              <td>10 products</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label class="checkbox-container">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </td>
+                              <td>Free Posters</td>
+                              <td>10 products</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label class="checkbox-container">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </td>
+                              <td>Free Posters</td>
+                              <td>10 products</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="col-md-4">
+                          <div class="card p-2 p-sm-5 h-100vh">
+                            <h1 class="pb-3 pb-sm-5">Create Collection</h1>
+                            <input class="background-gray mt-5" type="text" name="" placeholder="Collection Name">
+                            <button class="button button__primary button-block ">Create</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="acc-discount" role="tabpanel" aria-labelledby="acc-discount-tab">
+              <div class="container">
+                <div class="user-popup-card">
+                  <img src="../assets/img/user-img.png" alt="">
+                  <div class="">
+                    <p>Welcome, user@gmail.com</p>
+                    <span class="txt-primary-solid">logout</span>
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-3 mb-5">
+                    <h1>Discount</h1>
+                  </div>
+                  <div class="col-md-4">
+                    <form action=""
+                      class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
+                      <label class="col-1"><img src="../assets/img/search.svg" alt=""></label>
+                      <input class="col-10" type="text" placeholder="Search">
+                    </form>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="button button__primary button-lg">Create Discount</button>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="br-1 mt-5 background-gray p-5 table-responsive">
+                      <table class=" table table-reversed">
+                        <thead>
+                          <tr>
+                            <th class="">
+                              <div class="multiselect">
+                                <div class="selectBox" onclick="showCheckboxes(4)">
+                                  <select>
+                                    <label class="checkbox-container" id="selectAll">
+                                      <input type="checkbox" style="display: none;">
+                                      <span class="checkmark" style="top: 8px"></span>
+                                    </label>
+                                  </select>
+                                  <div class="overSelect"></div>
+                                </div>
+                                <div class="checkboxes">
+                                  <label class="checkbox-container" id="selectAll">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="checkbox-container" id="deSelectAll">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Discount Code
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Uses
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Remaining
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Discount
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Date
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>discountcode-100</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>40$</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="acc-strains" role="tabpanel" aria-labelledby="acc-strains-tab">
+              <div class="container">
+                <div class="user-popup-card">
+                  <img src="../assets/img/user-img.png" alt="">
+                  <div class="">
+                    <p>Welcome, user@gmail.com</p>
+                    <span class="txt-primary-solid">logout</span>
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-3 mb-5">
+                    <h1>Strains</h1>
+                  </div>
+                  <div class="col-md-4">
+                    <form action=""
+                      class="shop-header__form background-gray row d-flex justify-content-between align-items-center no-gutters px-3 ">
+                      <label class="col-1"><img src="../assets/img/search.svg" alt=""></label>
+                      <input class="col-10" type="text" placeholder="Search">
+                    </form>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="button button__primary button-lg">Create Strain</button>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="br-1 mt-5 background-gray p-5 table-responsive">
+                      <table class=" table table-reversed">
+                        <thead>
+                          <tr>
+                            <th class="">
+                              <div class="multiselect">
+                                <div class="selectBox" onclick="showCheckboxes(5)">
+                                  <select>
+                                    <label class="checkbox-container" id="selectAll">
+                                      <input type="checkbox" style="display: none;">
+                                      <span class="checkmark" style="top: 8px"></span>
+                                    </label>
+                                  </select>
+                                  <div class="overSelect"></div>
+                                </div>
+                                <div class="checkboxes">
+                                  <label class="checkbox-container" id="selectAll">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="checkbox-container" id="deSelectAll">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Strain Name
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Quantity
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Products
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                            <th scope="col">
+                              <div class="sp-head">
+                                Date
+                                <div class="sp-head-arrows">
+                                  <img src="../assets/img/arrow-up-primary.svg" alt="">
+                                  <img src="../assets/img/arrow-down-primary.svg" alt="">
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>Strain 1</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>Strain 1</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>Strain 1</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>Strain 1</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>Strain 1</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>Strain 1</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>Strain 1</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>Strain 1</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
+                            </td>
+                            <td>Strain 1</td>
+                            <td>
+                              22
+                            </td>
+                            <td>23</td>
+                            <td>09/01/2020 12:30 PM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="chat-message">
+    <span>5</span>
+    <img src="../assets/img/message.svg" alt="">
+  </div>
+  <script src="../assets/js/jquery-3.5.1.js"></script>
+  <script src="../assets/js/jquery.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl.carousel.min.js"></script>
+  <script src="../assets/js/chart.js"></script>
+  <script src="../assets/js/easyeditor.min.js"></script>
+  <script src="../assets/js/jquery-ui.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    $.datepicker.setDefaults({
+      showOn: "both",
+      buttonImageOnly: true,
+      buttonImage: "../assets/img/arrow-up-primary-solid.svg",
+      buttonText: "Calendar"
+    });
+    $(".datepicker").datepicker();
+    $("#textEditor").EasyEditor();
+    var ctx = document.getElementById('adminChart-2').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      responsive: true,
+      data: {
+        labels: ['1', '2', '3', '4', '5', '6'],
+        datasets: [{
+          label: '',
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

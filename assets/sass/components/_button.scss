@@ -1,0 +1,77 @@
+.button {
+  font-family: "Herman";
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 0.8rem;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  @include respond(sm) {
+    margin-top: 1rem;
+  }
+  &-block {
+    width: 100%;
+    padding: 1rem 3rem;
+  }
+  &-lg {
+    padding: 1rem 3rem;
+  }
+  &__primary {
+    background-color: $color-primary;
+    &--txtwht {
+      color: $color-white;
+    }
+    &--light {
+      background-color: rgba($color-primary, 0.3);
+      color: $color-primary;
+    }
+  }
+  &__outline {
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    background-color: transparent;
+    &:hover,
+    &:active {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+    &-reversed {
+      border: 1px solid $color-white;
+      color: $color-primary;
+      background-color: $color-white;
+      &:hover,
+      &:active {
+        color: $color-white;
+        background-color: $color-primary;
+      }
+    }
+    &-danger {
+      border: 1px solid $color-red;
+      color: $color-red;
+      background-color: transparent;
+      &:hover,
+      &:active {
+        color: $color-white;
+        background-color: $color-red;
+      }
+    }
+  }
+  &__dark,
+  &__dark:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }
+  &__gradient {
+    background: linear-gradient(270deg, #dc5ed7 0%, #ffa7fc 100%);
+    color: $color-white;
+  }
+  &__danger {
+    background-color: $color-red-light;
+    color: $color-red;
+  }
+}
